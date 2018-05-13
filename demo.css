@@ -179,7 +179,7 @@ nav ul li a.current-demo{
 
 .dropbtn a:hover{
 transition-duration: 300ms;
-
+color: limegreen
 }
 
 .dropdown {

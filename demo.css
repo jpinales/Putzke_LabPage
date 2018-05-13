@@ -97,70 +97,120 @@ a {
 }
 
 
-/* Header Style */
-.codrops-top {
-	line-height: 24px;
-	font-size: 11px;
-	background: #fff;
-	background: rgb(0, 0, 0);
-	text-transform: uppercase;
-	z-index: 9999;
+
+/* Navigation Bar */
+ul{
 	position: absolute;
-	font-family: Cambria, Georgia, serif;
-	text-shadow: rgb(0, 0, 0);
-	box-shadow: 1px 0px 2px rgba(0,0,0,0.2);
-}
-
-.codrops-top a {
-	padding: 0px 10px;
-	letter-spacing: 1px;
-	color: #fff;
-	display: inline-block;
-}
-
-.codrops-top a:hover {
-	background: #333;
-}
-
-.codrops-top span.right {
-	float: right;
-}
-
-.codrops-top span.right a {
 	float: left;
-	display: block;
+	text-align: right;
+	z-index: 2000;	
+	top: 2.5%;
+	right: 2.5%;
 }
 
-/* Demo Buttons Style */
-.codrops-demos {
-	float: right;
-	position: absolute;
-	padding-top: 10px;
+nav ul li{
+  display: inline-block;
 }
 
-.demo-1 .codrops-demos {
-	position: fixed;
-	z-index: 2000;
-	top: 30px;
-	left: 30px;
+nav ul li a{
+  color: white;
+  font-size: 15px;
+  text-transform:uppercase;
+  text-decoration:none;
+  padding: 3px;
+  font-weight: 500;
+  
 }
 
-.codrops-demos a {
-    display: inline-block;
-    margin: 10px;
+nav ul li a:hover{
+  transition-duration: 300ms;
+  text-decoration:none;
+  color: limegreen;
+}
+
+nav ul li a.current-demo{
 	color: rgb(255, 255, 255);
-    font-weight: 700;
-    line-height: 30px;
-	border-bottom: 4px solid transparent;
+  border-bottom: 4px solid transparent;
+  border-radius: 0%;
+  border-color: rgb(255, 255, 255);
+  padding-bottom: 0;
+
 }
 
-.codrops-demos a:hover {
-	color: rgb(255, 255, 255);
-	border-color: rgb(255, 255, 255);
+
+.homeImg-wrap{
+  padding-top: 10%;
+  text-align: center;
+    }
+    
+    .homeImg-wrap > a{
+ 	display:inline-block;
+      vertical-align: middle;
+      
+      border-left: 20px;
+      border-right: 20px;
+			}
+	.homeImg-wrap a img{
+      display:block;
+      
+      
+	}
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: #008CBA;
 }
 
-.codrops-demos a.current-demo,
-.codrops-demos a.current-demo:hover {
-	color: rgb(255, 255, 255);
-	border-color: rgb(0, 0, 0);
+.overlay:hover {
+  opacity: 1;
+}
+
+.dropbtn {
+    color: white;
+    border: none;  
+}
+
+.dropbtn a:hover{
+transition-duration: 300ms;
+
+}
+
+.dropdown {
+    position: relative;
+    display: block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    z-index: 2;
+}
+
+.dropdown-content a {
+    display: block;
+}
+
+.dropdown-content a:hover{
+  background:inherit;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+    footer {
+      background-color:inherit;
+      color: white;
+      padding: 0px;
+      position:fixed;
+      bottom:0px;
+    }
+navbar {
+  break-after: auto;
 }

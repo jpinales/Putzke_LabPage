@@ -105,10 +105,10 @@
 
 /* Default for background colors */
 .sl-slide-horizontal .sl-slide-inner {
-	background: #ddd;
+	background: rgb(0, 0, 0);
 }
 
 .sl-slide-vertical .sl-slide-inner {
-	background: #ccc;
+	background: rgb(255, 255, 255);
 }
 

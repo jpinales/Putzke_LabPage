@@ -166,14 +166,46 @@
 
 
 
-/* First Slide */
+/* First Slide - News */
 .demo-1 .bg-1 .sl-slide-inner,
 .demo-1 .bg-1 .sl-content-slice {
-	background: #4B004E;
-	background-image: url(../images/Reamy1.jpg);
+	background: rgb(255, 255, 255);
+	/*background-image: url(../images/Reamy1.jpg);*/
 	background-repeat: no-repeat;
 	background-position: center;
+	overflow-y:scroll; 
+	overflow-x:hidden;
 }
+
+.demo-1 .bg-1 .sl-slide-inner > nav ul li a{
+	color: black;
+	font-size: 15px;
+	text-transform:uppercase;
+	text-decoration:none;
+	padding: 3px;
+	font-weight: 500;
+  }
+
+  .demo-1 .bg-1 .sl-slide-inner > nav ul li a:hover{
+	transition-duration: 300ms;
+	text-decoration:none;
+	color: limegreen;	
+  }
+
+  .demo-1 .bg-1 .sl-slide-inner > nav ul li a.current-demo{
+	color: black;
+  border-bottom: 4px solid transparent;
+  border-radius: 0%;
+  border-color: black;
+  padding-bottom: 0;
+
+}
+
+.demo-1 .bg-1 .sl-slide-inner > nav ul li .dropbtn a:hover{
+	transition-duration: 300ms;
+	text-decoration:none;
+	color: black;
+  }
 
 
 

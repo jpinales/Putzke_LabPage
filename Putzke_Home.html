@@ -2,152 +2,19 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <title>Putzke's Research</title>
+  <title>The Putzke Lab</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
+  <link rel="stylesheet" type="text/css" href="css/demo.css" />
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
-
-  <style>
-
-@import url(https://fonts.googleapis.com/css?family=Open+Sans);
-
-body{
- /* background-image: url("/Applications/MAMP/htdocs/images/Putzke-Homepage-2.png"); */
-  background-color:black;
-  font-family:"Open Sans";
-}
-
-ul{
-	position: absolute;
-	float: left;
-	text-align: right;
-	z-index: 2000;	
-	top: 2.5%;
-	right: 2.5%;
-}
-
-
-nav ul li{
-  display: inline-block;
-}
-
-nav ul li a{
-  color: white;
-  font-size: 15px;
-  text-transform:uppercase;
-  text-decoration:none;
-}
-li a {
-  float: left;
-  line-height: 200%;
-  border-radius: 50%;
-  display: block;
-}
-
-li a:hover{
-  transition-duration: 300ms;
-  background:;
-}
-
-a:hover 
-{
-     color:inherit; 
-     text-decoration:none; 
-     cursor:pointer;  
-}
-
-homeImg {
-  border-radius: 50%;
-  display: inline-block;
-  vertical-align: middle;
-}
-
-	.homeImg-wrap, h1{
-		text-align: center;	
-		}
-	.homeImg-wrap > a{
- 			display:inline-block;
-			vertical-align: middle;
-      border-left: 20px;
-      border-right: 20px;
-			}
-	.homeImg-wrap a img{
-      display:block;
-	}
-.overlay {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  height: 100%;
-  width: 100%;
-  opacity: 0;
-  transition: .5s ease;
-  background-color: #008CBA;
-}
-
-.overlay:hover {
-  opacity: 1;
-}
-
-.dropbtn {
-    color: white;
-    padding: 5px;
-    border: none;
-    
-}
-
-.dropdown {
-    position: relative;
-    display: block;
-}
-/*    */
-.dropdown-content {
-    display: none;
-    position: absolute;
-    padding-top: 25%;
-    z-index: 1;
-    border-radius: 50%;
-}
-
-.dropdown-content a {
-    padding: 12px, 16px;
-    text-decoration: none;
-    display: inline-block;
-}
-.dropdown-content a:hover{
-  background:inherit;
-
-}
-
-
-.dropdown:hover .dropdown-content {
-    display: block;
-}
-    footer {
-      background-color:inherit;
-      color: white;
-      padding: 0px;
-      position:fixed;
-      bottom:0px;
-    }
-navbar {
-  break-after: auto;
-}
-
-
-    
-  </style>
-
-
 </head>
-<body>
 
+
+<body style="background-color: black" >
+  <!-- Navigation Bar -->
   <nav>
     <ul>
       <li><a class="current-demo" href="Putzke_Home.html">Home</a></li>
@@ -155,8 +22,8 @@ navbar {
         <div class="dropdown">
         <div class="dropbtn"><a>Research</a></div>
           <div class="dropdown-content">
-              <a href="Putzke_Reasearch_Zfish.html">Zebrafish</a>
-              <a href="Putzke_Reasearch_Nem.html">Nematodes</a>
+            <a href="Putzke_Reasearch_Nem.html">Nematodes</a>
+            <a href="Putzke_Reasearch_Zfish.html">Zebrafish</a>
           </div>
         </div>
       </li>
@@ -164,10 +31,8 @@ navbar {
       <li><a href="Putzke_Members.html">Members</a></li>
     </ul>
   </nav>
-
-
-
-
+  <!-- Navigation Bar -->
+      <!-- Home Page Images -->
       <div class="homeImg-wrap">
           <a href="Putzke_Reasearch_Nem.html">
             <img src="images/nemotodec.png" alt="Nematodes" style="width:400px; height:auto">
@@ -176,12 +41,8 @@ navbar {
             <img src="images/zfishc.png" alt="Zfish" style="width:400px; height:auto">
           </a>
       </div>
-
-
-
-
-
-
+      <!-- Home Page Images -->
+  
 
 
 <footer class="container-fluid text-center" style="text-decoration-color: orange;">

@@ -97,7 +97,7 @@ a {
 }
 
 /* Navigation Bar */
-ul, ul:hover{
+ul{
 	position: absolute;
 	float: left;
 	text-align: right;
@@ -169,17 +169,20 @@ transform: scale(1);
 }
 
 .dropdown-content a {
-    display: block;
+		display: block;
+		padding-top: 0;
+  	padding-bottom: 0;
 }
 
 .dropdown-content a:hover{
   background:inherit;
   transform: scale(1.2);
-  -webkit-transform: scale(1.2);
+	-webkit-transform: scale(1.2);
 }
 
 .dropdown:hover .dropdown-content {
-    display: block;
+		display: block;
+		text-align: left;
 }
 
 navbar {
@@ -286,7 +289,7 @@ navbar {
 	}
   }
 
-img.researchImg{
+	img.leftresearchImg{
 	  border-radius: 10%;
 	  margin-right: 15px; 
 	  margin-top: 5px;
@@ -294,5 +297,327 @@ img.researchImg{
 	  width: 300px;
 	  height: auto;
 }
+img.rightresearchImg{
+	border-radius: 10%;
+	margin-right: 15px; 
+	margin-top: 5px;
+	float: right;
+	width: 300px;
+	height: auto;
+}
+
+.demo-1 .bg-1 .sl-slide-inner > ul{
+	position: absolute;
+	float: left;
+	text-align: right;
+	z-index: 2000;	
+	top: 2.5%;
+	right: 2.5%;
+}
+
+.demo-1 .bg-1 .sl-slide-inner > section > footer a{
+	color: lime;
+}
+
+.demo-1 .bg-1 .sl-slide-inner > section >	footer a:hover{
+		transform: scale(1.2);
+		-webkit-transform: scale(1.2);
+		color: lime;
+		text-decoration:none;
+	}
 
 /* Research pages */
+
+/* First Slide - News */
+.demo-1 .bg-1 .sl-slide-inner,
+.demo-1 .bg-1 .sl-content-slice {
+	background: rgb(255, 255, 255);
+	background-repeat: no-repeat;
+	background-position: center;
+	overflow-y:scroll; 
+	overflow-x:hidden;
+}
+
+.demo-1 .bg-1 .sl-slide-inner > nav ul{
+	position: absolute;
+	float: left;
+	text-align: right;
+	z-index: 2000;	
+	top: 2.5%;
+  right: 2.5%;
+}
+
+.demo-1 .bg-1 .sl-slide-inner > nav ul li,
+.demo-1 .bg-1 .sl-slide-inner > nav ul li:hover{
+	display: inline-block;
+}
+
+
+
+.demo-1 .bg-1 .sl-slide-inner > nav ul li a{
+	color: black;
+	font-size: 15px;
+	text-transform:uppercase;
+	text-decoration:none;
+	padding: 5%;
+	font-weight: 500;
+  }
+
+  .demo-1 .bg-1 .sl-slide-inner > nav ul li a:hover{
+	display: inline-block;
+	transition-duration: 300ms;
+	text-decoration:none;
+	color: lime;
+	transform: scale(1.2);
+	-webkit-transform: scale(1.2);	
+  }
+
+  .demo-1 .bg-1 .sl-slide-inner > nav ul li a.current-demo,
+  .demo-1 .bg-1 .sl-slide-inner > nav ul li a.current-demo:hover{
+	color: lime;
+  border-bottom: 4px solid transparent;
+  border-radius: 0%;
+  border-color: lime;
+  padding-top: 0;
+  padding-bottom: 0;
+  transform: scale(1);
+  -webkit-transform: scale(1);
+
+}
+
+.demo-1 .bg-1 .sl-slide-inner > nav ul li .dropdown .dropbtn a:hover{
+	color: lime;
+  
+}
+
+.demo-1 .bg-1 .sl-slide-inner > nav ul li .dropdown .dropbtn a:hover{
+	transition-duration: 300ms;
+	text-decoration:none;
+	color: lime;
+	transform: scale(1);
+  -webkit-transform: scale(1);
+  }
+
+  .demo-1 .bg-1 .sl-slide-inner > nav ul li .dropdown {
+    position: relative;
+    display: block;
+}
+
+.demo-1 .bg-1 .sl-slide-inner > nav ul li .dropdown .dropdown-content {
+    display: none;
+    position: absolute;
+		z-index: 2;
+		text-align: left;
+}
+
+.demo-1 .bg-1 .sl-slide-inner > nav ul li .dropdown .dropdown-content a {
+		display: inline-block;
+		position: relative;
+		padding: 0;
+}
+
+.demo-1 .bg-1 .sl-slide-inner > nav ul li .dropdown .dropdown-content a:hover{
+	background:inherit;
+	transform: scale(1.2);
+	-webkit-transform: scale(1.2);
+  }
+
+.demo-1 .bg-1 .sl-slide-inner > nav ul li .dropdown:hover .dropdown-content {
+	position: absolute;
+	display: block;
+	padding: 0;
+}
+
+  navbar {
+	break-after: auto;
+  }
+
+  .demo-1 .bg-1 .sl-slide-inner > section > footer {
+	background-color:inherit;
+	color: white;
+	padding: 0px;
+	position:fixed;
+	bottom:0px;
+	font-size: 15px;
+	text-transform:uppercase;
+	font-weight: 500;
+	text-decoration:none;
+	
+  }
+
+  .demo-1 .bg-1 .sl-slide-inner > footer a {
+	color: lime;
+  }
+
+  .demo-1 .bg-1 .sl-slide-inner > footer a:hover{
+	transform: scale(1.2);
+	-webkit-transform: scale(1.2);
+	color: lime;
+	text-decoration:none;
+  }
+
+  .demo-1 .bg-1 .sl-slide-inner > section > footer > div.row.justify-content-md-center div.col.col-lg-1  {
+	  float: left;
+  }
+
+  .demo-1 .bg-1 .sl-slide-inner > section > footer p {
+	color: black;
+}
+
+/* First Slide - News */
+
+
+
+/* Lab Members */
+
+.demo-1 .sm-img {
+	position: absolute;
+	width: 250px;
+	height: 250px;
+	top: 15%;
+	left: 50%;
+	margin: 0 0 0 -100px;
+	border-radius: 50%;
+	padding: 10px;
+	box-shadow: inset 0 5px 0 5px white;
+}
+
+.demo-1 .bk-img {
+	padding: 50px;
+	-webkit-box-sizing: content-box;
+	-moz-box-sizing: content-box;
+	box-sizing: content-box;
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;	
+	background-size: cover;
+	background-position: center center;
+	opacity: .8;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.demo-1 .bg-2 .sl-slide-inner,
+.demo-1 .bg-2 .sl-content-slice,
+.demo-1 .bg-3 .sl-slide-inner,
+.demo-1 .bg-3 .sl-content-slice,
+.demo-1 .bg-4 .sl-slide-inner,
+.demo-1 .bg-4 .sl-content-slice {
+	background: black;
+}
+
+.demo-1 .bg-2 h2,
+.demo-1 .bg-3 h2,
+.demo-1 .bg-4 h2,{
+	color: #fff;
+	text-shadow: 1px 1px 1px rgba(0,0,0,0.2);
+}
+
+.demo-1 .bg-2 blockquote:before,
+.demo-1 .bg-3 blockquote:before,
+.demo-1 .bg-4 blockquote:before, {
+	color: #222;
+}
+
+.demo-1 .bg-2 .sl-slide-inner > footer,
+.demo-1 .bg-3 .sl-slide-inner > footer,
+.demo-1 .bg-4 .sl-slide-inner > footer
+ {
+	background-color:inherit;
+	color: transparent;
+	padding: 0px;
+	position:fixed;
+	bottom:0px;
+	font-size: 15px;
+	text-transform:uppercase;
+	font-weight: 500;
+	text-decoration:none;
+	background-color: transparent;
+	
+  }
+
+	.demo-1 .bg-2 .sl-slide-inner > footer a,
+	.demo-1 .bg-3 .sl-slide-inner > footer a,
+	.demo-1 .bg-4 .sl-slide-inner > footer a {
+	color: lime;
+	background-color: transparent;
+  }
+
+	.demo-1 .bg-2 .sl-slide-inner > footer a:hover,
+	.demo-1 .bg-3 .sl-slide-inner > footer a:hover,
+	.demo-1 .bg-4 .sl-slide-inner > footer a:hover{
+	transform: scale(1.2);
+	-webkit-transform: scale(1.2);
+	color: lime;
+	text-decoration:none;
+  }
+
+	.demo-1 .bg-2 .sl-slide-inner > footer > div.row.justify-content-md-center div.col.col-lg-1,
+	.demo-1 .bg-3 .sl-slide-inner > footer > div.row.justify-content-md-center div.col.col-lg-1,
+	.demo-1 .bg-4 .sl-slide-inner > footer > div.row.justify-content-md-center div.col.col-lg-1{
+	  float: left;
+  }
+
+	.demo-1 .bg-2 .sl-slide-inner > footer p,
+	.demo-1 .bg-3 .sl-slide-inner > footer p,
+	.demo-1 .bg-4 .sl-slide-inner > footer p{
+	color: white;
+}
+
+/* Dr. Putzke */
+.demo-1 .sm-img-1 {
+	background-image: url(../images/Lab_Members/About1.jpg);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-clip: content-box;
+	background-size: 150%;
+}
+
+.demo-1 .bk-img-1 {
+	background-image: url(../images/Lab_Members/Bkg_Img1.jpg);
+}
+
+/* Person 2 */
+
+.demo-1 .sm-img-2 {
+	background-image: url(../images/Lab_Members/ww1.jpg);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-clip: content-box;
+	background-size: 200%;
+}
+
+.demo-1 .bk-img-2 {
+	background-image: url(../images/Lab_Members/Bkg_Img2.jpg);
+}
+
+/* Person 3 */
+
+.demo-1 .sm-img-3 {
+	background-image: url(../images/Lab_Members/flash1.jpg);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-clip: content-box;
+	background-size: 200%;
+}
+
+.demo-1 .bk-img-3 {
+	background-image: url(../images/Lab_Members/Bkg_Img3.jpg);
+}
+
+div.sl-slider > div.sl-slide.bg-4 > div.sl-slide-inner > blockquote p{
+/* Fallback for web browsers that doesn't support RGBa */
+background: rgba(255, 255, 255, 0.6) transparent;
+/* RGBa with 0.6 opacity */
+background: rgba(255, 255, 255, 0.6);
+/* For IE 5.5 - 7*/
+filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#99000000, endColorstr=#99000000);
+/* For IE 8*/
+-ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#99000000, endColorstr=#99000000)";
+color: #fff;
+}
+
+
+/* Lab Members */

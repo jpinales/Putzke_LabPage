@@ -169,13 +169,15 @@ transform: scale(1);
 }
 
 .dropdown-content a {
-    display: block;
+		display: block;
+		padding-top: 0;
+  	padding-bottom: 0;
 }
 
 .dropdown-content a:hover{
   background:inherit;
   transform: scale(1.2);
-  -webkit-transform: scale(1.2);
+	-webkit-transform: scale(1.2);
 }
 
 .dropdown:hover .dropdown-content {

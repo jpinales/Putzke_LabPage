@@ -657,3 +657,22 @@ color: #fff;
 
 
 /* Lab Members */
+
+/*Resouces */
+
+.resourceBody{
+	overflow-x: hidden;
+	background-color: black;
+	background-image: url(../images/Resources/resourcesBkg.jpg);
+	background-repeat: no-repeat;
+}
+
+/*Resouces */
+
+.aboutBody{
+	overflow-x: hidden;
+	background-color: black;
+	background-image: url(../images/About/AboutBkg.jpg);
+	background-repeat: no-repeat;
+}
+

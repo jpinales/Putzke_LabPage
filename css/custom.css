@@ -122,8 +122,7 @@
 	position: absolute;
 	font-size: 34px;
 	font-weight: 700;
-	letter-spacing: 13px;
-	text-transform: uppercase;
+	letter-spacing: 10px;
 	width: 80%;
 	left: 10%;
 	text-align: center;
@@ -134,11 +133,22 @@
 
 
 .demo-1 .sl-slide blockquote p{
-	margin: 0 auto;
+	margin: 32% auto;
 	width: 60%;
 	max-width: 400px;
 	position: relative;
+	text-align: center;
+	font-weight: 1000;
+	/* Fallback for web browsers that doesn't support RGBa */
+    background: rgb(0, 0, 0, 0.3) transparent;
+    /* RGBa with 0.3 opacity */
+    background: rgba(0, 0, 0, 0.3);
+    /* For IE 5.5 - 7*/
+    filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#99000000, endColorstr=#99000000);
+    /* For IE 8*/
+    -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#99000000, endColorstr=#99000000)";
 }
+
 
 .demo-1 .sl-slide blockquote cite {
 	font-size: 10px;
@@ -149,611 +159,18 @@
 	letter-spacing: 4px;
 }
 
-/* Navigation Bar */
-ul, ul:hover{
-	position: absolute;
-	float: left;
-	text-align: right;
-	z-index: 2000;	
-	top: 2.5%;
-  right: 2.5%;
-}
-
-nav ul li{
-  display: inline-block;
-}
-
-nav ul li:hover{
-  display: inline-block;
-  
-}
-
-nav ul li a{
-  color: white;
-  font-size: 15px;
-  text-transform:uppercase;
-  text-decoration:none;
-  padding: 5%;
-  font-weight: 500;
-}
-
-nav ul li a:hover{
-  display: inline-block;
-  transition-duration: 300ms;
-  text-decoration:none;
-  color: lime;
-  transform: scale(1.2);
-  -webkit-transform: scale(1.2);
-}
-
-nav ul li a.current-demo,
-nav ul li a.current-demo:hover{
-	color: lime;
-  border-bottom: 4px solid transparent;
-  border-radius: 0%;
-  border-color: lime;
-  padding-top: 0;
-  padding-bottom: 0;
-  transform: scale(1);
-  -webkit-transform: scale(1);
-}
-
-.dropbtn {
-    color: white;
-    border: none;
-}
-
-.dropbtn a:hover{
-transition-duration: 300ms;
-color: lime;
-transform: scale(1);
-  -webkit-transform: scale(1);
-}
-
-.dropdown {
-    position: relative;
-    display: block;
-}
-
-.dropdown-content {
-    display: none;
-    position: absolute;
-    z-index: 2;
-}
-
-.dropdown-content a {
-    display: block;
-}
-
-.dropdown-content a:hover{
-  background:inherit;
-  transform: scale(1.2);
-  -webkit-transform: scale(1.2);
-}
-
-.dropdown:hover .dropdown-content {
-    display: block;
-}
-
-navbar {
-  break-after: auto;
-}
-/* Navigation Bar */
-
-  /* Footer */
-  footer {
-      background-color:inherit;
-      color: white;
-      padding: 0px;
-      position:fixed;
-      bottom:0px;
-      font-size: 15px;
-      text-transform:uppercase;
-      font-weight: 500;
-      text-decoration:none;
-      
-    }
-    /* Footer images */
-    footer a{
-      color: lime;
-    }
-
-      footer a:hover{
-        transform: scale(1.2);
-        -webkit-transform: scale(1.2);
-        color: lime;
-        text-decoration:none;
-      }
-    /* Footer */
 
 
-/* Home Page */
-.homeBody{
-	overflow-x: hidden;
-	background-color: black;
-	background: #000;
-}
-
-/* Home Images */
-.homeImg-wrap{
-	padding-top: 10%;
-	position: relative;
-	width: 30%;
-	display: block;
-	margin: 0 10%;
-  }
-  
-	  .homeImg-wrap .homeImg{
-	  display: table-cell;
-	  width: 90%;
-	  height: auto;
-	  transition: all .4s ease-in;
-	  margin:auto;
-	  overflow:hidden;
-	}
-	
-  .overlay {
-	position: absolute;
-	top: 50%;
-	left: 0;
-	width: 100%;
-	height: 50%;
-	opacity: 0;
-	transition: .5s ease;
-	background-color: transparent;
-	color: white;
-	text-align:center;
-	padding-top:10%;
-	font-size: 15px;
-	text-transform:uppercase;
-	font-weight: 500;
-  }
-  
-  .homeImg-wrap:hover .overlay {
-	opacity: 1;
-	z-index: 2;
-	}
-	
-	.homeImg-wrap:hover .homeImg {
-	transform: scale(1.2);
-	-webkit-transform: scale(1.2);
-	z-index: 3;
-	}
-/* Home Images */
-/* Home Page */
-
-/* Research pages */
-.jumbotron {
-	padding: 2rem 1rem;
-	background-color: #e9ecef;
-	border-radius: 10%;
-	margin-top: 10%;  
-	height: 65%; 
-	overflow-y: scroll;
-  }
-  
-  @media (min-width: 576px) {
-	.jumbotron {
-	  padding: 4rem 2rem;
-	}
-  }
-
-img.leftresearchImg{
-	  border-radius: 10%;
-	  margin-right: 15px; 
-	  margin-top: 5px;
-	  float: left;
-	  width: 300px;
-	  height: auto;
-}
-img.rightresearchImg{
-	border-radius: 10%;
-	margin-right: 15px; 
-	margin-top: 5px;
-	float: right;
-	width: 300px;
-	height: auto;
-}
-/* Research pages */
-
-
-/* First Slide - News */
-.demo-1 .bg-1 .sl-slide-inner,
-.demo-1 .bg-1 .sl-content-slice {
-	background: rgb(255, 255, 255);
-	/*background-image: url(../images/Reamy1.jpg);*/
-	background-repeat: no-repeat;
-	background-position: center;
-	overflow-y:scroll; 
-	overflow-x:hidden;
-}
-
-.demo-1 .bg-1 .sl-slide-inner > nav ul li a{
-	color: black;
-	font-size: 15px;
-	text-transform:uppercase;
-	text-decoration:none;
-	padding: 3px;
-	font-weight: 500;
-  }
-
-  .demo-1 .bg-1 .sl-slide-inner > nav ul li a:hover{
-	transition-duration: 300ms;
-	text-decoration:none;
-	color: limegreen;	
-  }
-
-  .demo-1 .bg-1 .sl-slide-inner > nav ul li a.current-demo{
-	color: black;
-  border-bottom: 4px solid transparent;
-  border-radius: 0%;
-  border-color: black;
-  padding-bottom: 0;
-
-}
-
-.demo-1 .bg-1 .sl-slide-inner > nav ul li .dropbtn a:hover{
-	transition-duration: 300ms;
-	text-decoration:none;
-	color: black;
-  }
-
-
-
-/* Second Slide */
-.demo-1 .bg-2 .sl-slide-inner,
-.demo-1 .bg-2 .sl-content-slice {
-	background: #B200FF;
-}
-
-.demo-1 .r-img-2 {
-	background-image: url(../images/Reamy_Pg2_1.jpg);
-	background-repeat: no-repeat;
-	background-position: center;
-	background-clip: content-box;
-	background-size: 200%;
-	float: right;
-	margin-left: -85px; 
-	max-width: 170px; 
-	max-height: 170px;
-}
-
-.demo-1 .r-img-3 {
-	background-image: url(../images/Reamy_Pg2_2.jpg);
-	background-repeat: no-repeat;
-	background-position: center;
-	background-clip: content-box;
-	background-size: 200%;
-	float: right;
-	margin-left: -85px; 
-	max-width: 170px; 
-	max-height: 170px;
-}
-
-.demo-1 .r-img-4 {
-	background-image: url(../images/Reamy_Pg2_3.jpg);
-	background-repeat: no-repeat;
-	background-position: center;
-	background-clip: content-box;
-	background-size: 200%;
-	float: right;
-	margin-left: -85px; 
-	max-width: 170px; 
-	max-height: 170px;
-}
-
-.demo-1 .r-img-5 {
-	background-image: url(../images/Reamy_Pg2_4.jpg);
-	background-repeat: no-repeat;
-	background-position: center;
-	background-clip: content-box;
-	background-size: 200%;
-	float: right;
-	margin-left: -85px; 
-	max-width: 170px; 
-	max-height: 170px;
-}
-
-.demo-1 .r-img-how {
-	background-image: url(../images/Reamy_Pg3_1.jpg);
-	background-repeat: no-repeat;
-	background-position: center;
-	background-clip: content-box;
-	background-size: 200%;
-	float: right;
-	margin-left: -85px; 
-	max-width: 170px; 
-	max-height: 170px;
-}
-
-.demo-1 .r-img-how2 {
-	background-image: url(../images/Reamy_Pg3_2.jpg);
-	background-repeat: no-repeat;
-	background-position: center;
-	background-clip: content-box;
-	background-size: 200%;
-	float: right;
-	margin-left: -85px; 
-	max-width: 170px; 
-	max-height: 170px;
-}
-
-.demo-1 .r-img-how3 {
-	background-image: url(../images/blockchain.jpg);
-	background-repeat: no-repeat;
-	background-position: center;
-	background-clip: content-box;
-	background-size: 100%;
-	float: right;
-	margin-left: -85px; 
-	max-width: 170px; 
-	max-height: 170px;
-}
-
-.demo-1 .r-img-how4 {
-	background-image: url(../images/learning.jpg);
-	background-repeat: no-repeat;
-	background-position: center;
-	background-clip: content-box;
-	background-size: 180%;
-	float: right;
-	margin-left: -85px; 
-	max-width: 170px; 
-	max-height: 170px;
-}
-
-.demo-1 .r-img-how5 {
-	background-image: url(../images/deepl.jpg);
-	background-repeat: no-repeat;
-	background-position: center;
-	background-clip: content-box;
-	background-size: 170%;
-	float: right;
-	margin-left: -85px; 
-	max-width: 170px; 
-	max-height: 170px;
-}
-
-.demo-1 .r-img-how6 {
-	background-image: url(../images/ican.jpg);
-	background-repeat: no-repeat;
-	background-position: center;
-	background-clip: content-box;
-	background-size: 150%;
-	float: right;
-	margin-left: -85px; 
-	max-width: 170px; 
-	max-height: 170px;
-}
-
-.demo-1 .r-img-team {
-	background-image: url(../images/amz.jpg);
-	background-repeat: no-repeat;
-	background-position: center;
-	background-clip: content-box;
-	background-size: 200%;
-	float: right;
-	margin-left: -85px; 
-	max-width: 170px; 
-	max-height: 170px;
-}
-
-.demo-1 .r-img-team2 {
-	background-image: url(../images/b&n.jpg);
-	background-repeat: no-repeat;
-	background-position: center;
-	background-clip: content-box;
-	background-size: 200%;
-	float: right;
-	margin-left: -85px; 
-	max-width: 170px; 
-	max-height: 170px;
-}
-
-.demo-1 .r-img-team3 {
-	background-image: url(../images/gscholar.jpg);
-	background-repeat: no-repeat;
-	background-position: center;
-	background-clip: content-box;
-	background-size: 200%;
-	float: right;
-	margin-left: -85px; 
-	max-width: 170px; 
-	max-height: 170px;
-}
-
-.demo-1 .r-img-team4 {
-	background-image: url(../images/DCMar.jpg);
-	background-repeat: no-repeat;
-	background-position: center;
-	background-clip: content-box;
-	background-size: 200%;
-	float: right;
-	margin-left: -85px; 
-	max-width: 170px; 
-	max-height: 170px;
-}
-
-.demo-1 .r-img-team5 {
-	background-image: url(../images/mangapanda.jpg);
-	background-repeat: no-repeat;
-	background-position: center;
-	background-clip: content-box;
-	background-size: 200%;
-	float: right;
-	margin-left: -85px; 
-	max-width: 170px; 
-	max-height: 170px;
-}
-
-.demo-1 .r-img-team6 {
-	background-image: url(../images/audi.jpg);
-	background-repeat: no-repeat;
-	background-position: center;
-	background-clip: content-box;
-	background-size: 150%;
-	float: right;
-	margin-left: -85px; 
-	max-width: 170px; 
-	max-height: 170px;
-}
-
-.demo-1 .r-img-team7 {
-	background-image: url(../images/edx.jpg);
-	background-repeat: no-repeat;
-	background-position: center;
-	background-clip: content-box;
-	background-size: 200%;
-	float: right;
-	margin-left: -85px; 
-	max-width: 170px; 
-	max-height: 170px;
-}
-
-.demo-1 .r-img-team8 {
-	background-image: url(../images/brilliant.jpg);
-	background-repeat: no-repeat;
-	background-position: center;
-	background-clip: content-box;
-	background-size: 200%;
-	float: right;
-	margin-left: -85px; 
-	max-width: 170px; 
-	max-height: 170px;
-}
-
-.demo-1 .r-img-team9 {
-	background-image: url(../images/GCP.jpg);
-	background-repeat: no-repeat;
-	background-position: center;
-	background-clip: content-box;
-	background-size: 100%;
-	float: right;
-	margin-left: -85px; 
-	max-width: 170px; 
-	max-height: 170px;
-}
-
-.demo-1 .r-img-team10 {
-	background-image: url(../images/Coursera.jpg);
-	background-repeat: no-repeat;
-	background-position: center;
-	background-clip: content-box;
-	background-size: 100%;
-	float: right;
-	margin-left: -85px; 
-	max-width: 170px; 
-	max-height: 170px;
-}
-
-.demo-1 .r-img-team11 {
-	background-image: url(../images/wolfram.jpg);
-	background-repeat: no-repeat;
-	background-position: center;
-	background-clip: content-box;
-	background-size: 100%;
-	float: right;
-	margin-left: -85px; 
-	max-width: 170px; 
-	max-height: 170px;
-}
-
-.demo-1 .r-img-team12 {
-	background-image: url(../images/pearson.jpg);
-	background-repeat: no-repeat;
-	background-position: center;
-	background-clip: content-box;
-	background-size: 100%;
-	float: right;
-	margin-left: -85px; 
-	max-width: 170px; 
-	max-height: 170px;
-}
-
-.demo-1 .r-img-nxt {
-	background-image: url(../images/speech.jpg);
-	background-repeat: no-repeat;
-	background-position: center;
-	background-clip: content-box;
-	background-size: 100%;
-	float: right;
-	margin-left: -85px; 
-	max-width: 170px; 
-	max-height: 170px;
-}
-
-.demo-1 .r-img-nxt2 {
-	background-image: url(../images/scan.jpg);
-	background-repeat: no-repeat;
-	background-position: center;
-	background-clip: content-box;
-	background-size: 100%;
-	float: right;
-	margin-left: -85px; 
-	max-width: 170px; 
-	max-height: 170px;
-}
-
-.demo-1 .bg-2 blockquote:before {
-	color: #222;
-}
-
-.demo-1 .bg-2 h2{
-	color: #fff;
-	text-shadow: 1px 1px 1px rgba(0,0,0,0.2);
-}
 
 /* Third Slide */
-.demo-1 .bg-3 .sl-slide-inner,
-.demo-1 .bg-3 .sl-content-slice {
-	background: #ffffff;
-}
 
-.demo-1 .bg-3 .deco {
-	border-color: #fff;
-	border-color: rgba(255,255,255,0.5);
-}
 
-.demo-1 .bg-3 [data-icon]:after {
-	color: #fff;
-	text-shadow: 0 0 1px #fff;
-	box-shadow: inset 0 0 0 10px #b55381;
-}
 
-.demo-1 .bg-3 h2,
-.demo-1 .bg-3 blockquote{
-	color: #fff;
-	text-shadow: 0px 1px 1px rgba(0,0,0,0.3);
-}
-
-.demo-1 .bg-3 blockquote:before {
-	color: #c46c96;
-}
 
 /* Forth Slide */
-.demo-1 .bg-4 .sl-slide-inner,
-.demo-1 .bg-4 .sl-content-slice {
-	background: #5bc2ce;
-}
 
-.demo-1 .bg-4 .deco {
-	border-color: #379eaa;
-}
 
-.demo-1 .bg-4 [data-icon]:after {
-	text-shadow: 0 0 1px #277d87;
-	color: #277d87;
-}
 
-.demo-1 .bg-4 h2,
-.demo-1 .bg-4 blockquote{
-	color: #fff;
-	text-shadow: 1px 1px 1px rgba(0,0,0,0.2);
-}
-
-.demo-1 .bg-4 blockquote:before {
-	color: #379eaa;
-}
 
 /* Fifth Slide */
 .demo-1 .bg-5 .sl-slide-inner,
@@ -794,84 +211,11 @@ img.rightresearchImg{
 
 
 /*------------------------------------*/
-.demo-1 .sm-img {
-	position: absolute;
-	width: 250px;
-	height: 250px;
-	top: 15%;
-	left: 50%;
-	margin: 0 0 0 -100px;
-	border-radius: 50%;
-	border: 2px dashed #f7f7f7;
-	padding: 10px;
-	box-shadow: inset 0 5px 0 5px #f7f7f7;
-}
-
-.demo-1 .sm-img-nxt {
-	background-image: url(../images/speech.jpg);
-	background-repeat: no-repeat;
-	background-position: center;
-	background-clip: content-box;
-	background-size: 75%;
-}
-
-.demo-1 .sm-img-nxt2 {
-	background-image: url(../images/scan.jpg);
-	background-repeat: no-repeat;
-	background-position: center;
-	background-clip: content-box;
-	background-size: 200%;
-}
-
-.demo-1 .r-img {
-	position: absolute;
-	width: 300px;
-	height: 300px;
-	left: 50%;
-	border-radius: 50%;
-	border: 2px dashed #f7f7f7;
-	padding: 5px;
-}
-
-.demo-1 .coming {
-	position: absolute;
-	width: 300px;
-	height: 300px;
-	top: 10%;
-	left: 50%;
-	margin: 0 0 0 -150px;
-	border-radius: 50%;
-	border: 2px dashed #f7f7f7;
-	padding: 10px;
-	box-shadow: inset 0 5px 0 5px #f7f7f7;
-}
-
-.demo-1 .bk-img {
-	padding: 50px;
-	-webkit-box-sizing: content-box;
-	-moz-box-sizing: content-box;
-	box-sizing: content-box;
-	position: absolute;
-	width: 100%;
-	height: 100%;
-	-webkit-background-size: cover;
-	-moz-background-size: cover;	
-	background-size: cover;
-	background-position: center center;
-	opacity: .8;
-	background-repeat: no-repeat;
-	background-position: center;
-}
 
 
-.demo-1 .bk-img-1 {
-	background-image: url(../images/6.jpg);
-}
 
-.demo-1 .bk-img-2 {
-	background-image: url(../images/7.jpg);
-	
-}
+
+
 
 /*---------------------------------------------*/
 
@@ -885,7 +229,7 @@ img.rightresearchImg{
 	animation: roll 1s ease-out both, fadeIn 1s ease-out both;
 }
 
-.sl-trans-elems .sm-img{
+.sl-trans-elems .labMem-img{
 	-webkit-animation: roll 1s ease-out both, fadeIn 1s ease-out both;
 	-moz-animation: roll 1s ease-out both, fadeIn 1s ease-out both;
 	-o-animation: roll 1s ease-out both, fadeIn 1s ease-out both;
@@ -893,7 +237,7 @@ img.rightresearchImg{
 	animation: roll 1s ease-out both, fadeIn 1s ease-out both;
 }
 
-.sl-trans-elems .r-img{
+.sl-trans-elems .news-img{
 	-webkit-animation: roll 1s ease-out both, fadeIn 1s ease-out both;
 	-moz-animation: roll 1s ease-out both, fadeIn 1s ease-out both;
 	-o-animation: roll 1s ease-out both, fadeIn 1s ease-out both;
@@ -923,7 +267,7 @@ img.rightresearchImg{
 	animation: scaleDown 1s ease-in-out both;
 }
 
-.sl-trans-back-elems .sm-img{
+.sl-trans-back-elems .labMem-img{
 	-webkit-animation: scaleDown 1s ease-in-out both;
 	-moz-animation: scaleDown 1s ease-in-out both;
 	-o-animation: scaleDown 1s ease-in-out both;
@@ -931,7 +275,7 @@ img.rightresearchImg{
 	animation: scaleDown 1s ease-in-out both;
 }
 
-.sl-trans-back-elems .r-img{
+.sl-trans-back-elems .news-img{
 	-webkit-animation: scaleDown 1s ease-in-out both;
 	-moz-animation: scaleDown 1s ease-in-out both;
 	-o-animation: scaleDown 1s ease-in-out both;
@@ -1069,14 +413,14 @@ img.rightresearchImg{
 		margin-bottom: 50px;
 	}
 
-	.demo-1 .sm-img {
+	.demo-1 .labMem-img {
 		width: 130px;
 		height: 130px;
 		margin-left: -65px;
 		margin-bottom: 50px;
 	}
 
-	.demo-1 .r-img {
+	.demo-1 .news-img {
 		width: 130px;
 		height: 130px;
 		margin-left: -65px;
@@ -1111,3 +455,6 @@ img.rightresearchImg{
 	}
 
 }
+
+
+

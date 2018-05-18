@@ -38,14 +38,12 @@ section h3.section-subheading {
 }
 
 section h4.panel-heading{
-  float: left;
   font-family: 'Droid Serif', 'Helvetica Neue', Helvetica, Arial, sans-serif;
   font-size: 30px; font-weight: 700; text-shadow: 0 0 1px #000;
-  
+  text-transform: none;
 }
 
-section h5.panel-subheading{
-  float: left;
+section h4.panel-subheading{
   font-family: 'Droid Serif', 'Helvetica Neue', Helvetica, Arial, sans-serif;
   font-size: 14px; font-weight: 700; text-shadow: 0 0 1px #000;
   text-transform: none;
@@ -54,7 +52,6 @@ section h5.panel-subheading{
 @media (min-width: 260px) {
   section {
     padding: 150px 0;
-
     }
     
 }
@@ -81,12 +78,9 @@ section h5.panel-subheading{
 
 
 
-
-
-
 .timeline {
   position: relative;
-  margin-left: 28.2%; margin-right: auto;
+  padding: 0;
   list-style: none;
 }
 
@@ -146,27 +140,20 @@ section h5.panel-subheading{
   height: 80px;
   margin-left: 0;
   text-align: center;
-  color: white;
+  overflow: hidden;
   border: 7px solid #e9ecef;
   border-radius: 100%;
-  background-color: #fed136;
+  background-color: transparent;
 }
 
-.timeline > li .r-img {
-	position: absolute;
-	width: 300px;
-	height: 300px;
-	left: 50%;
-	border-radius: 50%;
-	border: 2px dashed #f7f7f7;
-	padding: 5px;
+.timeline > li .timeline-image img {
+  max-width: 100%; max-height: 100%;
+
 }
 
 .timeline > li .panel-heading h4{
-  float: left;
   font-family: 'Droid Serif', 'Helvetica Neue', Helvetica, Arial, sans-serif;
   font-size: 30px; font-weight: 700; text-shadow: 0 0 1px #000;
-  
 }
 
 .timeline > li .timeline-image h4 {
@@ -216,9 +203,15 @@ section h5.panel-subheading{
 
 
 
-.timeline .timeline-body > ul,
+.timeline .timeline-body > ul{
+  margin-bottom: 0;
+  text-shadow: 2px 2px 2px rgba(0,0,0,0.2);
+   
+}
 .timeline .timeline-body > p {
   margin-bottom: 0;
+  text-shadow: 2px 2px 2px rgba(0,0,0,0.2);
+  position: auto; 
 }
 
 @media (min-width: 260px) {
@@ -360,64 +353,3 @@ section h5.panel-subheading{
     padding: 0 100px 20px 20px;
   }
 }
-
-section#contact {
-  background-color: #212529;
-  background-image: url("../img/map-image.png");
-  background-repeat: no-repeat;
-  background-position: center;
-}
-
-section#contact .section-heading {
-  color: #fff;
-}
-
-section#contact .form-group {
-  margin-bottom: 25px;
-}
-
-section#contact .form-group input,
-section#contact .form-group textarea {
-  padding: 20px;
-}
-
-section#contact .form-group input.form-control {
-  height: auto;
-}
-
-section#contact .form-group textarea.form-control {
-  height: 248px;
-}
-
-section#contact .form-control:focus {
-  border-color: #fed136;
-  box-shadow: none;
-}
-
-section#contact ::-webkit-input-placeholder {
-  font-weight: 700;
-  color: #ced4da;
-  font-family: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-}
-
-section#contact :-moz-placeholder {
-  font-weight: 700;
-  color: #ced4da;
-  /* Firefox 18- */
-  font-family: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-}
-
-section#contact ::-moz-placeholder {
-  font-weight: 700;
-  color: #ced4da;
-  /* Firefox 19+ */
-  font-family: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-}
-
-section#contact :-ms-input-placeholder {
-  font-weight: 700;
-  color: #ced4da;
-  font-family: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-}
-
-

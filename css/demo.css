@@ -289,14 +289,22 @@ navbar {
 	}
   }
 
-img.researchImg{
-	  border-radius: 10%;
-	  margin-right: 15px; 
-	  margin-top: 5px;
-	  float: left;
-	  width: 300px;
-	  height: auto;
-}
+	img.leftResearchImg{
+		border-radius: 10%;
+		margin-right: 15px; 
+		margin-top: 5px;
+		float: left;
+		width: 300px;
+		height: auto;
+	}
+	img.rightResearchImg{
+		border-radius: 10%;
+		margin-right: 15px; 
+		margin-top: 5px;
+		float: right;
+		width: 300px;
+		height: auto;
+	}
 
 .demo-1 .bg-1 .sl-slide-inner > ul{
 	position: absolute;
@@ -334,12 +342,6 @@ img.researchImg{
 	margin-left: 0;
 	left: 0;
 }
-
-  
-
-
-
-
 
 .demo-1 .bg-1 .sl-slide-inner,
 .demo-1 .bg-1 .sl-content-slice {
@@ -528,17 +530,17 @@ img.researchImg{
 	background: black;
 }
 
-.demo-1 .bg-2 h2,
-.demo-1 .bg-3 h2,
-.demo-1 .bg-4 h2,{
-	color: #fff;
+.demo-1 .sl-slide.bg-2 h2,
+.demo-1 .sl-slide.bg-3 h2,
+.demo-1 .sl-slide.bg-4 h2 {
+	color: white;
 	text-shadow: 1px 1px 1px rgba(0,0,0,0.2);
 }
 
-.demo-1 .bg-2 blockquote:before,
-.demo-1 .bg-3 blockquote:before,
-.demo-1 .bg-4 blockquote:before, {
-	color: #222;
+.demo-1 .bg-2 blockquote,
+.demo-1 .bg-3 blockquote,
+.demo-1 .bg-4 blockquote {
+	color: white;
 }
 
 .demo-1 .bg-2 .sl-slide-inner > footer,
@@ -625,6 +627,20 @@ img.researchImg{
 
 .demo-1 .bk-img-3 {
 	background-image: url(../images/Lab_Members/Bkg_Img3.jpg);
+}
+
+/* Person 4 */
+
+.demo-1 .labMem-img-4 {
+	background-image: url(../images/Lab_Members/batman1.jpg);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-clip: content-box;
+	background-size: 200%;
+}
+
+.demo-1 .bk-img-4 {
+	background-image: url(../images/Lab_Members/Bkg_Img4.jpg);
 }
 
 div.sl-slider > div.sl-slide.bg-4 > div.sl-slide-inner > blockquote p{

@@ -206,8 +206,7 @@ footer p {
 
 img.leftResearchImg {
 	border-radius: 10%;
-	margin-right: 15px;
-	margin-top: 5px;
+	padding: 5px;
 	float: left;
 	width: 300px;
 	height: auto;
@@ -215,8 +214,7 @@ img.leftResearchImg {
 
 img.rightResearchImg {
 	border-radius: 10%;
-	margin-right: 15px;
-	margin-top: 5px;
+	padding: 5px;
 	float: right;
 	width: 300px;
 	height: auto;
@@ -294,8 +292,14 @@ h2 {
 	font-family: 'Droid Serif', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
 
+.newsBody section .timeline-panel .timeline-heading a,
+.newsBody section .timeline-panel .timeline-heading a:hover {
+	text-transform: none;
+	text-decoration: none;
+}
+
 .newsBody>section .timeline-heading h4.panel-heading,
-.newsBody>section .timeline-heading h4:hover.panel-heading {
+.newsBody>section .timeline-heading h4.panel-heading:hover {
 	color: black;
 	font-family: 'Droid Serif', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 	font-size: 30px;
@@ -307,7 +311,8 @@ h2 {
 	margin-bottom: 0;
 }
 
-.newsBody>section h4.panel-subheading {
+.newsBody>section .timeline-heading h4.panel-subheading,
+.newsBody>section .timeline-heading h4.panel-subheading:hover {
 	color: black;
 	font-family: 'Droid Serif', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 	font-size: 14px;
@@ -630,6 +635,12 @@ body.newsBody>.timeline>section>ul li .news-img {
 	overflow-x: hidden;
 }
 
+.demo-1 .bg-1 .sl-slide-inner ul.timeline {
+	margin-left: auto;
+    margin-right: auto;
+    width: 105%;
+}
+
 .demo-1 .bg-1 .sl-slide-inner nav ul li a,
 .demo-1 .bg-1 .sl-content-slice nav ul li a{
 	color: black;
@@ -801,8 +812,9 @@ background: white;
 }
 
 
-/* Dr. Putzke */
+/* - Dr. Putzke - */
 
+/* member image */
 .demo-1 .labMem-img-1 {
 	background-image: url(../images/Lab_Members/About1.jpg);
 	background-repeat: no-repeat;
@@ -811,13 +823,15 @@ background: white;
 	background-size: 150%;
 }
 
+/* background image */
 .demo-1 .bk-img-1 {
 	background-image: url(../images/Lab_Members/Bkg_Img1.jpg);
 }
 
 
-/* Person 2 */
+/* - Lab Member #2 - */
 
+/* member image */
 .demo-1 .labMem-img-2 {
 	background-image: url(../images/Lab_Members/ww1.jpg);
 	background-repeat: no-repeat;
@@ -826,13 +840,15 @@ background: white;
 	background-size: 200%;
 }
 
+/* background image */
 .demo-1 .bk-img-2 {
 	background-image: url(../images/Lab_Members/Bkg_Img2.jpg);
 }
 
 
-/* Person 3 */
+/* - Lab Member #3 - */
 
+/* member image */
 .demo-1 .labMem-img-3 {
 	background-image: url(../images/Lab_Members/flash1.jpg);
 	background-repeat: no-repeat;
@@ -841,13 +857,15 @@ background: white;
 	background-size: 200%;
 }
 
+/* background image */
 .demo-1 .bk-img-3 {
 	background-image: url(../images/Lab_Members/Bkg_Img3.jpg);
 }
 
 
-/* Person 4 */
+/* - Lab Member #4 - */
 
+/* member image */
 .demo-1 .labMem-img-4 {
 	background-image: url(../images/Lab_Members/batman1.jpg);
 	background-repeat: no-repeat;
@@ -856,9 +874,30 @@ background: white;
 	background-size: 200%;
 }
 
+/* background image */
 .demo-1 .bk-img-4 {
 	background-image: url(../images/Lab_Members/Bkg_Img4.jpg);
 }
+
+/* Add new lab memver here - */
+
+/* - Template - */
+
+/* - Lab Member # - */
+.demo-1 .labMem-img- {
+	background-image: url(../images/Lab_Members/.jpg);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-clip: content-box;
+	background-size: 200%;
+}
+
+/* background image */
+.demo-1 .bk-img- {
+	background-image: url(../images/Lab_Members/.jpg);
+}
+
+
 
 div.sl-slider>div.sl-slide.bg-4>div.sl-slide-inner>blockquote p {
 	/* Fallback for web browsers that doesn't support RGBa */
